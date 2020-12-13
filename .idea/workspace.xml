@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b49fb1ee-22e2-40a2-b8c3-0cd6edeea8b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/MainPanel/MainPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/MainPanel/Message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/MainPanel/MessageForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/MainPanel/MessageHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/ChatRoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/DirectMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/Favorited.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/SidePanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/UserPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Register/RegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/user_action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatPage/ChatPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatPage/ChatPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegisterPage/RegisterPage.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +59,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../miniproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\김지원\AppData\Roaming\npm\node_modules\prettier" />
     <property name="run.prettier.on.save" value="true" />
@@ -46,18 +83,41 @@
       <option name="presentableId" value="Default" />
       <updated>1606482611251</updated>
       <workItem from="1606482612780" duration="13104000" />
-      <workItem from="1606539665078" duration="1471000" />
+      <workItem from="1606539665078" duration="8208000" />
+      <workItem from="1606614561654" duration="586000" />
+      <workItem from="1606717209846" duration="48000" />
+      <workItem from="1606717284628" duration="10102000" />
+      <workItem from="1606753573668" duration="13000" />
+      <workItem from="1606982763382" duration="12908000" />
+      <workItem from="1607418520512" duration="1804000" />
+      <workItem from="1607793937926" duration="21145000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="367" y="125" key="FileChooserDialogImpl" timestamp="1606539708979">
+    <state x="505" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607793974921">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="367" y="125" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606539708979" />
+    <state x="505" y="95" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607793974921" />
+    <state x="367" y="125" key="FileChooserDialogImpl" timestamp="1607439724866">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="367" y="125" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607439724866" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1606483681568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
