@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49fb1ee-22e2-40a2-b8c3-0cd6edeea8b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Register/RegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/chatRoom_action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/chatRoom_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/ChatRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatPage/SidePanel/ChatRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +74,7 @@
       <workItem from="1606753573668" duration="13000" />
       <workItem from="1606982763382" duration="12908000" />
       <workItem from="1607418520512" duration="1804000" />
-      <workItem from="1607793937926" duration="21520000" />
+      <workItem from="1607793937926" duration="33101000" />
     </task>
     <servers />
   </component>
@@ -100,9 +106,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606483681568" />
-    <state x="337" y="79" key="Vcs.Push.Dialog.v2" timestamp="1607884623086">
+    <state x="337" y="79" key="Vcs.Push.Dialog.v2" timestamp="1607885075776">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607884623086" />
+    <state x="337" y="79" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607885075776" />
   </component>
 </project>
