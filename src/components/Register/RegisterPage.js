@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import firebase from "../../firebase";
@@ -10,9 +10,45 @@ const RegisterPage = () => {
   });
   const [errorFromSubmit, setErrorFromSubmit] = useState("");
   const [loading, setLoading] = useState(false);
+  const [emailLoading, setEmailLoading] = useState(true);
+  const [uniqueEmail, setUniqueEmail] = useState(false);
 
+  const email = useRef();
   const password = useRef();
+  email.current = watch("email");
   password.current = watch("password");
+
+  /* 이메일 형식이 알맞을 경우 이메일 중복 확인 버튼을 누를수 있음*/
+  useEffect(() => {
+    if (email.current !== undefined && email.current !== "" && !errors.email) {
+      setEmailLoading(false);
+    }
+  }, [email.current]);
+  /* 이메일 중복 확인 */
+  const isExistEmail = async (_email) => {
+    if (!emailLoading) {
+      let count = 0;
+      const query = firebase.database().ref("users").orderByKey();
+
+      await query.once("value").then(function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+          const childData = childSnapshot.val();
+          console.log(childData);
+          if (_email === childData.email) {
+            count++;
+            console.log(childData);
+          }
+        });
+      });
+      if (count > 0) {
+        alert("이미 존재하는 이메일 입니다");
+        setUniqueEmail(false);
+      } else {
+        alert(`${_email}은 사용가능한 이메일 입니다!`);
+        setUniqueEmail(true);
+      }
+    }
+  };
 
   const onSubmit = async (data) => {
     try {
@@ -33,6 +69,7 @@ const RegisterPage = () => {
       await firebase.database().ref("users").child(createUser.user.uid).set({
         name: createUser.user.displayName,
         image: createUser.user.photoURL,
+        email: data.email,
       });
 
       setLoading(false);
@@ -55,6 +92,16 @@ const RegisterPage = () => {
           type="email"
           ref={register({ required: true, pattern: /^\S+@\S+$/i })}
         />
+        {uniqueEmail ? (
+          "check!"
+        ) : (
+          <input
+            type="button"
+            value="중복확인"
+            onClick={() => isExistEmail(email.current)}
+            disabled={emailLoading}
+          />
+        )}
         {errors.email && errors.email.type === "required" && (
           <p>이메일은 반드시 입력해야합니다.</p>
         )}
@@ -68,6 +115,11 @@ const RegisterPage = () => {
         )}
         {errors.name && errors.name.type === "maxLength" && (
           <p>이름은 10글자를 넘길 수 없습니다.</p>
+        )}
+        <label>PhoneNumber</label>
+        <input name="tel" type="tel" ref={register({ required: true })} />
+        {errors.tel && errors.tel.type === "required" && (
+          <p>전화번호는 반드시 입력해야합니다.</p>
         )}
         <label>Password</label>
         <input
